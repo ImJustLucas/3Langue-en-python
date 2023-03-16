@@ -1,7 +1,7 @@
 import json
 
 class Flowerzzzzz:
-    def __init__(self, color, name, genrtypeOfPolen, numberPetals):
+    def __init__(self, color, name, typeOfPolen, numberPetals):
         self.color = color
         self.name = name
         self.typeOfPolen = typeOfPolen
@@ -11,7 +11,7 @@ class Flowerzzzzz:
         return json.dumps({
             'color': self.color,
             'name': self.name,
-            'typeOfPolen': self.typeOfPolen
+            'typeOfPolen': self.typeOfPolen,
             'numberPetals': self.numberPetals
         })
     
