@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>información del sistema</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>información del sistema</h1>
+      <p>
+        El sitio web que estás visitando describe las características del
+        sistema de tu computadora. Ten en cuenta que el texto está en español
+        porque estamos practicando el idioma. Espero que encuentres la
+        información útil y si tienes alguna pregunta, no dudes en hacérmela
+        saber. ¡Buena suerte en tu práctica del español!
+      </p>
+      <div class="card__container">
+        <div class="card">
+          <p>Sistema operativo:</p>
+          <p>{{ system }}</p>
+        </div>
+        <div class="card">
+          <p>Procesador :</p>
+          <p>{{ processor }}</p>
+        </div>
+        <div class="card">
+          <p>nombre de host :</p>
+          <p>{{ hostname }}</p>
+        </div>
+        <div class="card">
+          <p>dirección ip :</p>
+          <p>{{ ip_address }}</p>
+        </div>
+        <div class="card">
+          <p>memoria total :</p>
+          <p>{{ memory.memtotal / 1024 }} Mo</p>
+        </div>
+        <div class="card">
+          <p>memoria libre :</p>
+          <p>{{ memory.memfree / 1024 }} Mo</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
